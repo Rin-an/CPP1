@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanA.hpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ssadiki <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/05 17:02:13 by ssadiki           #+#    #+#             */
-/*   Updated: 2022/12/08 22:38:40 by ssadiki          ###   ########.fr       */
+/*   Created: 2022/12/10 23:46:02 by ssadiki           #+#    #+#             */
+/*   Updated: 2022/12/10 23:50:59 by ssadiki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HUMAN_A_H
-# define HUMAN_A_H
-# include "Weapon.hpp"
+#include "Harl.hpp"
 
-class	HumanA{
-	Weapon&	w;
-	std::string	name;
-	public :
-		~HumanA();
-		HumanA(std::string name, Weapon& w);
-		void	attack(void);
-};
-#endif
+int	main(int argc, char **argv)
+{
+	Harl	h;
+
+	if (argc == 1 || argc > 2)
+		std::cout << "Too many or few arguments!" << std::endl;
+	else
+		h.complain(argv[1]);
+	return (0);
+}

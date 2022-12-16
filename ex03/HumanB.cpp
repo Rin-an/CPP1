@@ -6,7 +6,7 @@
 /*   By: ssadiki <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 17:09:58 by ssadiki           #+#    #+#             */
-/*   Updated: 2022/12/06 01:45:49 by ssadiki          ###   ########.fr       */
+/*   Updated: 2022/12/08 22:37:34 by ssadiki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	HumanB::attack(void)
 	std::cout << this->name << " attacks with their " << this->w->getType() << std::endl;
 }
 
-void	HumanB::setWeapon(Weapon w)
+void	HumanB::setWeapon(Weapon& w)
 {
 	this->w = &w;
 }

@@ -6,7 +6,7 @@
 /*   By: ssadiki <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 16:02:42 by ssadiki           #+#    #+#             */
-/*   Updated: 2022/12/05 16:24:30 by ssadiki          ###   ########.fr       */
+/*   Updated: 2022/12/13 16:46:24 by ssadiki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,9 @@ int	main()
 
 	std::cout << "*****In heap******" << std::endl;
 	z = newZombie("Aedion");
+	z->annouce();
+	delete(z);
+	z = newZombie("Cookie");
 	z->annouce();
 	delete(z);
 	std::cout << "******In stack******" << std::endl;
